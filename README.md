@@ -15,8 +15,10 @@ My statistical seasonality model selects the best trades using historical data. 
 
 We can run the model on a different commodity like West Texas Intermediate (WTI) or RBOB Gasoline Futures.  We just need appropriate data in a SQLite database!
 
+#### <ins>Top 5 Long Trades by Contract Month:</ins>
 ![Top 5 Long Trades](images/top5_long.PNG)
 
+#### <ins>Brent Cumulative Profit-Loss for dozen selected trades:</ins>
 ![Cumulative PL](images/cum_pl_2018.PNG)
 
 
