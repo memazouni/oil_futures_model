@@ -4,6 +4,9 @@
 ***
 ###### ***Copyright © Justin Mackie. All Rights Reserved.  No one may distribute or create derivative works from my work without my written permission.  You are prohibited from using my code for commercial and/or business purposes.  However, you are permitted to fork and run my code solely for educational purposes on your personal (non-business) computer.***
 ***
+
+
+
 #### <ins>Background:</ins>
 Oil futures prices are time series data.  Each business day, there is one settlement price for the commodity.  The commodity illustrated in the model is Brent Crude, the key global price benchmark for Atlantic basin crude.  [Brent]( https://www.theice.com/products/219/Brent-Crude-Futures/specs)  is used to price the majority of Earth's internationally-traded crude supplies.
 
@@ -11,6 +14,10 @@ Oil futures prices are time series data.  Each business day, there is one settle
 My statistical seasonality model selects the best trades using historical data.  Then, cumulative trade Profit/Loss performance is tallied for the designated time period.  Model logic is built on Python and Pandas.  The Model reads and writes data from a SQLite3 database.  Data visualizations are plotted with Seaborn and Matplotlib.
 
 We can run the model on a different commodity like West Texas Intermediate (WTI) or RBOB Gasoline Futures.  We just need appropriate data in a SQLite database!
+
+![Top 5 Long Trades](images/top5_long.PNG)
+
+![Cumulative PL](images/cum_pl_2018.PNG)
 
 
 #### <ins>Terminology:</ins>
