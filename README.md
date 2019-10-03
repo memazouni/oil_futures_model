@@ -6,7 +6,6 @@
 ***
 
 
-
 #### <ins>Background:</ins>
 Suppose we want to predict oil prices several months ahead.  Oil futures prices are daily time series data.  Each business day, there is one **settlement** price for the commodity.  Prices sort of repeat over the years in cyclical patterns called seasonality.  My model captures price patterns and computes the chance of the pattern repeating using historical prices.  The patterns are ranked strong to weak.  And they translate to financial trades in commodity futures.
 
@@ -14,6 +13,14 @@ The commodity illustrated in the model is Brent Crude, the key global price benc
 
 #### <ins>The Model:</ins>
 My statistical seasonality model selects the best trades using historical data.  Then, cumulative trade Profit/Loss performance is tallied for the designated time period.  Model logic is built on Python and Pandas.  The Model reads and writes data from the SQLite3 database named **data.sqlite**.  Data visualizations are plotted with Seaborn and Matplotlib.
+
+When picking a basket of financial trades (or a standalone trade), the odds a trade will move up or down is not the full picture.  Volatility and price path are relevant.  Volatility is relevant because a less volatile trade is better than a trade with wild price swings, all other things being equal.  Price path matters because as we go through time, a **cumulative trade return** of $1 that never dips negative is better than a (larger) cumulative trade return of $1.10 that swings to ($2.00) and later ($1.00).  Only a highly risk-tolerant investor would prefer the latter pattern.
+
+The model visualizes trade movement, both in dollar terms and normalized z-score (move per unit of standard deviation).
+![Dollar Move](images/top5_long.PNG)
+
+![z-move](images/top5_long.PNG)
+
 
 #### <ins>Top 5 Long Trades by Contract Month: Jan and Feb shown</ins>
 ![Top 5 Long Trades](images/top5_long.PNG)
