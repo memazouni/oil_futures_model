@@ -42,7 +42,7 @@ Picking valid spreads is complicated by the fact that contracts expire.  We mode
 
 Why not model the spread between "Spread1" and "Spread2"?  I've modeled that too!  Commodity traders call them fly spreads.  In contrast, if there is one spread modeled, it is a spread model.
 
-Here is the [link](https://github.com/jkmackie/oil_futures_model/blob/master/Brent_2018_PL_GitHub.ipynb) to the spread trading model.
+Here is the [link](https://github.com/jkmackie/oil_futures_model/blob/master/Brent_2018_PL_GitHub.ipynb) to the spread trading model in Jupyter Notebook format.
 
 ###### *Please note:  Certain code is omitted from the .ipynb model.  Full model is available upon request.*
 
