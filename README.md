@@ -64,4 +64,4 @@ Here is the [link](https://github.com/jkmackie/oil_futures_model/blob/master/Bre
 * **Spreads TABLE: spread** - Settlement price difference for two different valid Contact Months on the same date.
 * **Expiry TABLE: last_trade_date** - the last day the Contract Month (prompt_month) is available.  Ex. BRENT future for May-2019  expired 03-29-2019.
 
-Please contact me at jmackie "at" gmail "dot" com with any questions or feedback.
+Please contact me at **jmackie "at" gmail "dot" com** with any questions or feedback.
