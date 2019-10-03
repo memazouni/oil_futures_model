@@ -17,9 +17,12 @@ My statistical seasonality model selects the best trades using historical data. 
 When picking a basket of financial trades (or a standalone trade), the odds a trade will move up or down is not the full picture.  Volatility and price path are relevant.  Volatility is relevant because a less volatile trade is better than a trade with wild price swings, all other things being equal.  Price path matters because as we go through time, a **cumulative trade return** of $1 that never dips negative is better than a (larger) cumulative trade return of $1.10 that swings to ($2.00) and later ($1.00).  Only a highly risk-tolerant investor would prefer the latter pattern.
 
 The model visualizes trade movement, both in dollar terms and normalized z-score (move per unit of standard deviation).
-![Dollar Move](images/top5_long.PNG)
 
-![z-move](images/top5_long.PNG)
+#### <ins>1-3v4 Spread Dollar Move</ins>
+![Dollar Move](images/1-3v4_dollar_move.PNG)
+
+#### <ins>1-3v4 Spread z-Normalized Move</ins>
+![z-move](images/1-3v4_z_move.PNG)
 
 
 #### <ins>Top 5 Long Trades by Contract Month: Jan and Feb shown</ins>
