@@ -58,6 +58,6 @@ Why not model the spread between "Spread1" and "Spread2"?  I've modeled that too
 * **Back month** - last  month in a spread.  Ex. 3 in a 1v3 spread.
 * **calmonth_spread_label** - spread contract month with front and back contract.  Ex 1-3v6 is calendar month 1 (Jan).  Front contract is month 3 (Mar) and back contract is month 6 (Jun).  The spread is the front price minus the back price.  That is the March minus June settlement price in this case.
 * **z_diff** - z-score change between the month-start and month-end z-scores
-* **Settles TABLE:** - settle - Daily settlement price of product
-* **Spreads TABLE:** - spread - Settlement price difference for two different valid Contact Months on the same date.
-* **Expiry TABLE:** - last_trade_date - the last day the Contract Month (prompt_month) is available.  Ex. BRENT future for May-2019  expired 03-29-2019.
+* **Settles TABLE: settle** - Daily settlement price of product
+* **Spreads TABLE: spread** - Settlement price difference for two different valid Contact Months on the same date.
+* **Expiry TABLE: last_trade_date** - the last day the Contract Month (prompt_month) is available.  Ex. BRENT future for May-2019  expired 03-29-2019.
