@@ -11,7 +11,7 @@ Suppose we want to predict oil prices several months ahead.  Oil futures prices 
 The commodity illustrated in the model is Brent Crude, the key global price benchmark for Atlantic basin crude.  [Brent]( https://www.theice.com/products/219/Brent-Crude-Futures/specs)  is used to price the majority of Earth's internationally-traded crude supplies.
 
 #### <ins>The Model:</ins>
-My statistical seasonality model selects the best long and short trades using historical data.  Then, cumulative trade Profit/Loss performance is tallied for the designated time period.  Model logic is built on Python and Pandas.  The Model reads and writes data from the SQLite3 database named **data.sqlite**.  Data visualizations are plotted with Seaborn and Matplotlib.
+My statistical seasonality model selects the best long and short trades using historical data.  Then, cumulative trade Profit/Loss performance is tallied for the designated time period.  Model logic is built on Python and Pandas.  The Model reads and writes data from the SQLite3 database named **data.sqlite**.  Data visualizations are plotted with Seaborn and Matplotlib.  The model is presented in a Jupyter Notebook -- the **.ipynb** file.
 
 ***
 #### <ins>Top 5 Long Trades by Contract Month: Jan and Feb shown</ins>
@@ -42,7 +42,7 @@ Picking valid spreads is complicated by the fact that contracts expire.  We mode
 
 Why not model the spread between "Spread1" and "Spread2"?  I've modeled that too!  Commodity traders call them fly spreads.
 
-###### *Please note:  Certain code is omitted from the model.  Full model is available upon request.*
+###### *Please note:  Certain code is omitted from the .ipynb model.  Full model is available upon request.*
 
 ***
 #### <ins>Trading Terminology:</ins>
