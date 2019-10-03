@@ -40,7 +40,9 @@ The prices modeled are actually the price spread between two contracts for the d
 
 Picking valid spreads is complicated by the fact that contracts expire.  We model spreads that are active for the whole calendar month (until any month-end expiration).  Here is a concrete example.  If the front contract is traded the whole month, but the back contract is traded only the last seven days, this is not a valid spread.
 
-Why not model the spread between "Spread1" and "Spread2"?  I've modeled that too!  Commodity traders call them fly spreads.
+Why not model the spread between "Spread1" and "Spread2"?  I've modeled that too!  Commodity traders call them fly spreads.  In contrast, if there is one spread modeled, it is a spread model.
+
+Here is the [link](https://github.com/jkmackie/oil_futures_model/blob/master/Brent_2018_PL_GitHub.ipynb) to the spread trading model.
 
 ###### *Please note:  Certain code is omitted from the .ipynb model.  Full model is available upon request.*
 
