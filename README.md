@@ -5,7 +5,6 @@
 ###### ***Copyright © Justin Mackie. All Rights Reserved.  No one may distribute or create derivative works from my work without my written permission.  You are prohibited from using my code for commercial and/or business purposes.  However, you are permitted to fork and run my code solely for educational purposes on your personal (non-business) computer.***
 ***
 
-
 #### <ins>Background:</ins>
 Suppose we want to predict oil prices several months ahead.  Oil futures prices are daily time series data.  Each business day, there is one **settlement** price for the commodity.  Prices sort of repeat over the years in cyclical patterns called seasonality.  My model captures price patterns and computes the chance of the pattern repeating using historical prices.  The patterns are ranked strong to weak.  And they translate to financial trades in commodity futures.
 
@@ -14,22 +13,26 @@ The commodity illustrated in the model is Brent Crude, the key global price benc
 #### <ins>The Model:</ins>
 My statistical seasonality model selects the best long and short trades using historical data.  Then, cumulative trade Profit/Loss performance is tallied for the designated time period.  Model logic is built on Python and Pandas.  The Model reads and writes data from the SQLite3 database named **data.sqlite**.  Data visualizations are plotted with Seaborn and Matplotlib.
 
+***
 #### <ins>Top 5 Long Trades by Contract Month: Jan and Feb shown</ins>
 ![Top 5 Long Trades](images/top5_long.PNG)
 
 #### <ins>Brent Cumulative Profit-Loss for dozen selected trades:</ins>
 ![Cumulative PL](images/cum_pl_2018.PNG)
+***
 
 #### <ins>Model Details:</ins>
 When picking a basket of financial trades (or a standalone trade), the odds a trade will move up or down is not the full picture.  Volatility and price path are relevant.  Volatility is important because a less volatile trade is better than a trade with wild price swings, all other things being equal.  Price path matters because as we go through time, a **cumulative total trade return** of $1 that never dips negative is better than a (larger) cumulative trade return of $1.10 that dips to ($2.00) and later ($1.00).  Only a highly risk-tolerant investor would prefer the latter pattern.
 
 The model visualizes trade movement, both in dollar terms and normalized z-score (move per unit of standard deviation).  See below.
 
+***
 #### <ins>1-3v4 Dollar Move:  2011-2017</ins>
 ![Dollar Move](images/1-3v4_dollar_move.PNG)
 
 #### <ins>1-3v4 Spread z-Normalized Move:  2011-2017</ins>
 ![z-move](images/1-3v4_z_move.PNG)
+***
 
 We can run the model on a different commodity like West Texas Intermediate (WTI) or RBOB Gasoline Futures.  We just need the data in a SQLite database!
 
@@ -39,9 +42,10 @@ Picking valid spreads is complicated by the fact that contracts expire.  We mode
 
 Why not model the spread between "Spread1" and "Spread2"?  I've modeled that too!  Commodity traders call them fly spreads.
 
-*Please note:  Certain code is omitted from the model.  Full model is available upon request.*
+###### *Please note:  Certain code is omitted from the model.  Full model is available upon request.*
 
-#### <ins>Terminology:</ins>
+***
+#### <ins>Trading Terminology:</ins>
 * **Fit Years** - Years used in computing trade ranking stats.
 * **Initial Price** - Price on Day before first day of month.
 * **Last Price** - Last Price for day.
