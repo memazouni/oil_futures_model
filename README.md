@@ -24,7 +24,7 @@ My statistical seasonality model selects the best long and short trades using hi
 #### <ins>Model Details:</ins>
 When picking a basket of financial trades (or a standalone trade), the odds a trade will move up or down is not the full picture.  Volatility and price path are relevant.  Volatility is important because a less volatile trade is better than a trade with wild price swings, all other things being equal.  Price path matters because as we go through time, a **cumulative total trade return** of $1 that never dips negative is better than a (larger) cumulative trade return of $1.10 that dips to ($2.00) and later ($1.00).  Only a highly risk-tolerant investor would prefer the latter pattern.
 
-The model visualizes trade movement, both in dollar terms and normalized z-score (move per unit of standard deviation).  See below.
+The model visualizes trade movement, both in dollar terms and normalized z-score.  The z-score is the move in standard deviations above/below the mean.  See below.
 
 ***
 #### <ins>1-3v4 Dollar Move:  2011-2017</ins>
