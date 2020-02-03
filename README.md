@@ -58,7 +58,7 @@ Here is the [link](https://github.com/jkmackie/oil_futures_model/blob/master/Bre
 * **Short Spread** - Short front contract, long back contract.
 * **Front month** - first month in a spread.  Ex. 1 in a 1v3 spread.
 * **Back month** - last  month in a spread.  Ex. 3 in a 1v3 spread.
-* **calmonth_spread_label** - spread contract month with front and back contract.  Ex 1-3v6 is calendar month 1 (Jan).  Front contract is month 3 (Mar) and back contract is month 6 (Jun).  The spread is the front price minus the back price.  That is the March minus June settlement price in this case.
+* **calmonth_spread_label** - the contract months for the front and back contracts.  Ex 1-3v6 is calendar month 1 (Jan).  Front contract is month 3 (Mar) and back contract is month 6 (Jun).  The spread is the front price minus the back price.  That is the March minus June settlement price in this case.
 * **z_diff** - z-score change between the month-start and month-end z-scores
 * **Settles TABLE: settle** - Daily settlement price of product
 * **Spreads TABLE: spread** - Settlement price difference for two different valid Contact Months on the same date.
